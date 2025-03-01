@@ -65,6 +65,8 @@ document.getElementById('job-button').addEventListener('click',function(event){
     jobButton.classList.add('disabled');    
 })
 
-
-
-
+// linkup with two html file
+document.getElementById('discover').addEventListener('click',function(event){
+    event.preventDefault();
+    window.location.href = "quesans.html";
+})
