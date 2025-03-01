@@ -14,6 +14,10 @@
         body {
           font-family: 'Poppins', sans-serif;
         }
+        button.disabled {
+            background-color: gray;
+            cursor: not-allowed;
+        }
       </style>
 </head>
 <body class="bg-blue-100">
@@ -29,7 +33,7 @@
             <div class="flex items-center gap-4">
                 <div class=" flex w-16 h-8 justify-around items-center rounded-full bg-gray-300 ">
                     <input type="checkbox" checked class="w-4 h-4"> 
-                    <span class="font-bold">24</span>
+                    <span id="work-number" class="font-bold">24</span>
                 </div>
                 <button class="w-6 h-6 "><img src="assets/theme-btn.png" alt=""></button>
             </div>
@@ -49,7 +53,7 @@
                         </div>
                         <div>
                             <div class="text-xs font-light">Task Assigned</div>
-                            <div class="text-xl font-bold">06</div>
+                            <div id="remain-work" class="text-xl font-bold">06</div>
                         </div>
                     </div>
                     <div class="bg-gradient-to-r from-blue-500 to-purple-300 text-white rounded-lg flex items-center justify-center flex-grow gap-4">
@@ -79,7 +83,7 @@
                         <div class="bg-white rounded-lg p-2 text-xs text-gray-600 mt-4">A card component has a figure, a body part, and inside body there are title and actions parts</div>
                         <div class="flex justify-between items-center mt-4 border-t-2 border-dashed">
                             <div class="text-xs">Deadline<br>21 March 2025</div>
-                            <button class="mt-4 bg-blue-600 text-white px-3 py-1 rounded">Completed</button>
+                            <button id="fix-button" class=" mt-4 bg-blue-600 text-white px-3 py-1 rounded">Completed</button>
                         </div>
                     </div>
                     <div class="bg-blue-50 p-4 rounded-lg shadow">
@@ -88,7 +92,7 @@
                         <div class="bg-white rounded-lg p-2 text-xs text-gray-600 mt-4">A card component has a figure, a body part, and inside body there are title and actions parts</div>
                         <div class="flex justify-between items-center mt-4 border-t-2 border-dashed">
                             <div class="text-xs">Deadline<br>21 March 2025</div>
-                            <button class="mt-4 bg-blue-600 text-white px-3 py-1 rounded">Completed</button>
+                            <button id="dark-button" class=" mt-4 bg-blue-600 text-white px-3 py-1 rounded">Completed</button>
                         </div>
                     </div>
                     <div class="bg-blue-50 p-4 rounded-lg shadow">
@@ -97,7 +101,7 @@
                         <div class="bg-white rounded-lg p-2 text-xs text-gray-600 mt-4">A card component has a figure, a body part, and inside body there are title and actions parts</div>
                         <div class="flex justify-between items-center mt-4 border-t-2 border-dashed">
                             <div class="text-xs">Deadline<br>21 March 2025</div>
-                            <button class="mt-4 bg-blue-600 text-white px-3 py-1 rounded">Completed</button>
+                            <button id="home-button" class=" mt-4 bg-blue-600 text-white px-3 py-1 rounded">Completed</button>
                         </div>
                     </div>
                     <div class="bg-blue-50 p-4 rounded-lg shadow">
@@ -106,7 +110,7 @@
                         <div class="bg-white rounded-lg p-2 text-xs text-gray-600 mt-4">A card component has a figure, a body part, and inside body there are title and actions parts</div>
                         <div class="flex justify-between items-center mt-4 border-t-2 border-dashed">
                             <div class="text-xs">Deadline<br>21 March 2025</div>
-                            <button class="mt-4 bg-blue-600 text-white px-3 py-1 rounded">Completed</button>
+                            <button id="emoji-button" class="mt-4 bg-blue-600 text-white px-3 py-1 rounded">Completed</button>
                         </div>
                     </div>
                     <div class="bg-blue-50 p-4 rounded-lg shadow">
@@ -115,7 +119,7 @@
                         <div class="bg-white rounded-lg p-2 text-xs text-gray-600 mt-4">A card component has a figure, a body part, and inside body there are title and actions parts</div>
                         <div class="flex justify-between items-center mt-4 border-t-2 border-dashed">
                             <div class="text-xs">Deadline<br>21 March 2025</div>
-                            <button class="mt-4 bg-blue-600 text-white px-3 py-1 rounded">Completed</button>
+                            <button id="openai-button" class="mt-4 bg-blue-600 text-white px-3 py-1 rounded">Completed</button>
                         </div>
                     </div>
                     <div class="bg-blue-50 p-3 rounded-lg shadow">
@@ -124,7 +128,7 @@
                         <div class="bg-white rounded-lg p-2 text-xs text-gray-600 mt-4">A card component has a figure, a body part, and inside body there are title and actions parts</div>
                         <div class="flex justify-between items-center mt-4 border-t-2 border-dashed">
                             <div class="text-xs">Deadline<br>21 March 2025</div>
-                            <button class="mt-4 bg-blue-600 text-white px-3 py-1 rounded">Completed</button>
+                            <button id="job-button" class="mt-4 bg-blue-600 text-white px-3 py-1 rounded">Completed</button>
                         </div>
                     </div>
                 </div>
