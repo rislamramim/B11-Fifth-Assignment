@@ -15,8 +15,8 @@
         }
       </style>
 </head>
-<body class="bg-blue-100">
-    <div class="w-4/5 mx-auto pt-3">
+<body class="bg-blue-50">
+    <div class="w-4/5 mx-auto pt-3 pb-3">
         <div class="bg-white rounded-lg flex justify-between items-center px-6 py-4 mb-4">
 
             <div class="flex gap-3">
@@ -27,7 +27,47 @@
                 <button class=" bg-blue-600 text-white px-4 py-2 rounded">Back to Desk</button>
             </div>
         </div>
-        
+        <div class="flex justify-center">
+            <h1 class="text-2xl font-bold">Blogs</h1>
+        </div>
+        <main>
+            <div class="bg-white rounded-lg p-6 mt-4 ">
+                <p class="text-xl font-bold pb-6 border-b-2 border-dashed">Question-1: What are the different ways to select an element in the DOM?</p>
+                <p class="text-lg font-medium pt-6">
+                    <span class="underline text-blue-500"> Answer :</span> 1.ID-আইডি অনুসারে. EX.-- document.getElementById(id).
+                    2.Class Name-শ্রেণীর নাম অনুসারে. Ex.-- document.getElementsByClassName(className).                    
+                    3.Tag Name-ট্যাগের নাম অনুসারে.  Ex.-- document.getElementsByTagName(tagName).                    
+                    4.CSS Selectors-সিএসএস নির্বাচক. Ex.-- document.querySelector(selector) and document.querySelectorAll(selector)
+                </p>
+            </div>
+            <div class="bg-white rounded-lg p-6 mt-4 ">
+                <p class="text-xl font-bold pb-6 border-b-2 border-dashed">Question-2: What is the difference between innerHTML, innerText, and textContent ?
+                </p>
+                <p class="text-lg font-medium pt-6">
+                    <span class="underline text-blue-500"> Answer :</span> *innerHTML* → HTML সহ সমস্ত কনটেন্ট নেয় ।  
+                    *innerText* → শুধুমাত্র ট্যাগের মধ্যের দৃশ্যমান টেক্সট নেয় ।  
+                    *textContent* → HTML ট্যাগ বাদে দৃশ্যমান ও অদৃশ্যমান সমস্ত টেক্সট নেয় ।
+                </p>  
+            </div>
+            <div class="bg-white rounded-lg p-6 mt-4 ">
+                <p class="text-xl font-bold pb-6 border-b-2 border-dashed">Question-3: What is event delegation in the DOM?</p>
+                <p class="text-lg font-medium pt-6">
+                    <span class="underline text-blue-500"> Answer :</span> জাভাস্ক্রিপ্টে Event Delegation হল এমন একটি ইভেন্ট-হ্যান্ডলিং প্যাটার্ন যা DOM ট্রিতে বাবলিং ধারণার উপর ভিত্তি করে দক্ষতার সাথে ইভেন্ট পরিচালনা করে । </p>                  
+            </div>
+            <div class="bg-white rounded-lg p-6 mt-4 ">
+                <p class="text-xl font-bold pb-6 border-b-2 border-dashed">Question-4: What is event bubbling in the DOM?</p>
+                <p class="text-lg font-medium pt-6">
+                    <span class="underline text-blue-500"> Answer :</span> Event Bubbling হলো DOM-এর একটি ইভেন্ট প্রচার পদ্ধতি, যেখানে কোনো চাইল্ড এলিমেন্টে ইভেন্ট ট্রিগার হলে, সেটি ধাপে ধাপে তার প্যারেন্ট এলিমেন্ট পর্যন্ত পৌঁছে যায়। </p>                  
+            </div>
+            <div class="bg-white rounded-lg p-6 mt-4 ">
+                <p class="text-xl font-bold pb-6 border-b-2 border-dashed">Question-5: How do you create, add, and remove elements using JavaScript?</p>
+                <p class="text-lg font-medium pt-6">
+                    <span class="underline text-blue-500"> Answer :</span> 1. Create an Element.
+                    Ex.-- document.createElement( ) .2. Add the Element.
+                    Ex.-- appendChild( ), append( ) .3. Remove the Element.
+                    Ex.-- removeChild( ) or remove( ) . </p>                  
+            </div>
+        </main>
     </div>
 </body>
 </html>
