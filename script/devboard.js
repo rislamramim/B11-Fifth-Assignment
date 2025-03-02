@@ -1,8 +1,8 @@
-// current time
+//---current time---//
 let date = new Date()
 document.getElementById("date").innerText = date.toDateString()
 
-// Fix Mobile Button Issue
+//---Fix Mobile Button Issue---//
 document.getElementById('fix-button').addEventListener('click',function(event){
     event.preventDefault();
     const completeWork = document.getElementById("work-number").innerText;
@@ -17,7 +17,7 @@ document.getElementById('fix-button').addEventListener('click',function(event){
     showAlert();     
 })
 
-// Add Dark Mode
+//---Add Dark Mode---//
 document.getElementById('dark-button').addEventListener('click',function(event){
     event.preventDefault();
     const completeWork = document.getElementById("work-number").innerText;
@@ -31,7 +31,7 @@ document.getElementById('dark-button').addEventListener('click',function(event){
     const title = document.getElementById("second-task").innerText;
     updateWorkHistory(title) ;    
 })
-// Optimize Home Page
+//---Optimize Home Page---//
 document.getElementById('home-button').addEventListener('click',function(event){
     event.preventDefault();
     const completeWork = document.getElementById("work-number").innerText;
@@ -45,7 +45,7 @@ document.getElementById('home-button').addEventListener('click',function(event){
     updateWorkHistory(title) ;
     showAlert();   
 })
-// Add new emoji 
+//---Add new emoji---// 
 document.getElementById('emoji-button').addEventListener('click',function(event){
     event.preventDefault();
     const completeWork = document.getElementById("work-number").innerText;
@@ -59,7 +59,7 @@ document.getElementById('emoji-button').addEventListener('click',function(event)
     updateWorkHistory(title);
     showAlert();   
 })
-// Integrate OpenAI API
+//---Integrate OpenAI API---//
 document.getElementById('openai-button').addEventListener('click',function(event){
     event.preventDefault();
     const completeWork = document.getElementById("work-number").innerText;
@@ -73,7 +73,7 @@ document.getElementById('openai-button').addEventListener('click',function(event
     updateWorkHistory(title);
     showAlert();
 })  
-// Improve Job searching
+//---Improve Job searching---//
 document.getElementById('job-button').addEventListener('click',function(event){
     event.preventDefault();
     const completeWork = document.getElementById("work-number").innerText;
@@ -103,8 +103,8 @@ document.getElementById('fix-button').addEventListener('click',function(event){
     if(sum === 0){
         alert("Congrats!!You have completed all the current task.")
     }
-
 })
+
 document.getElementById('dark-button').addEventListener('click',function(event){
     event.preventDefault();
     const remainWork = document.getElementById('remain-work').innerText;
@@ -114,8 +114,8 @@ document.getElementById('dark-button').addEventListener('click',function(event){
     if(sum === 0){
         alert("Congrats!!You have completed all the current task.")
     }
-
 })
+
 document.getElementById('home-button').addEventListener('click',function(event){
     event.preventDefault();
     const remainWork = document.getElementById('remain-work').innerText;
@@ -125,8 +125,8 @@ document.getElementById('home-button').addEventListener('click',function(event){
     if(sum === 0){
         alert("Congrats!!You have completed all the current task.")
     }
-
 })
+
 document.getElementById('emoji-button').addEventListener('click',function(event){
     event.preventDefault();
     const remainWork = document.getElementById('remain-work').innerText;
@@ -136,8 +136,8 @@ document.getElementById('emoji-button').addEventListener('click',function(event)
     if(sum === 0){
         alert("Congrats!!You have completed all the current task.")
     }
-
 })
+
 document.getElementById('openai-button').addEventListener('click',function(event){
     event.preventDefault();
     const remainWork = document.getElementById('remain-work').innerText;
@@ -147,8 +147,8 @@ document.getElementById('openai-button').addEventListener('click',function(event
     if(sum === 0){
         alert("Congrats!!You have completed all the current task.")
     }
-
 })
+
 document.getElementById('job-button').addEventListener('click',function(event){
     event.preventDefault();
     const remainWork = document.getElementById('remain-work').innerText;
@@ -158,13 +158,12 @@ document.getElementById('job-button').addEventListener('click',function(event){
     if(sum === 0){
         alert("Congrats!!You have completed all the current task.")
     }
-
 })
 
 //---task assigned ends---//
 
 
-// linkup with two html file
+//---linkup with two html file---//
 document.getElementById('discover').addEventListener('click',function(event){
     event.preventDefault();
     window.location.href = "quesans.html";

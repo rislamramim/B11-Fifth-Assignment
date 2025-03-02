@@ -1,4 +1,4 @@
-const button = document.getElementById('colorButton');
+const button = document.getElementById("color-button");
 const body = document.body;
     button.addEventListener('click', function() {
     body.style.backgroundColor = getRandomColor();

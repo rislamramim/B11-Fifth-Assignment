@@ -1,14 +1,14 @@
 function updateWorkHistory(workName) {
     const historyList = document.getElementById("history-container");
-    const newEntry = document.createElement("p");
-
+    const newTag = document.createElement("p");
+    newTag.classList.add("mb-3")
     const now = new Date();
     const timeString = now.toLocaleTimeString();
     const dateString = now.toLocaleDateString();
     
-    newEntry.innerText = `You have completed the task ${workName} on ${dateString} at ${timeString}`;
+    newTag.innerText = `You have completed the task ${workName} on ${dateString} at ${timeString}`;
                  
-    historyList.appendChild(newEntry);
+    historyList.appendChild(newTag);
 }
 
 document.getElementById("clear-history").addEventListener("click", function() {
