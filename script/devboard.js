@@ -1,3 +1,7 @@
+// current time
+let date = new Date()
+document.getElementById("date").innerText = date.toDateString()
+
 // Fix Mobile Button Issue
 document.getElementById('fix-button').addEventListener('click',function(event){
     event.preventDefault();
@@ -85,12 +89,8 @@ document.getElementById('job-button').addEventListener('click',function(event){
 })
 // ---Alert function---//
     function showAlert() {
-    alert("✅ Board Updated successfully!")
-    
-};
-
-
-
+    alert("Board Updated successfully!")
+    };
 
 //---task assigned start---//
 document.getElementById('fix-button').addEventListener('click',function(event){
@@ -100,6 +100,10 @@ document.getElementById('fix-button').addEventListener('click',function(event){
     const sum = convertedRemainWork - 1;
     document.getElementById("remain-work").innerText = sum;
 
+    if(sum === 0){
+        alert("Congrats!!You have completed all the current task.")
+    }
+
 })
 document.getElementById('dark-button').addEventListener('click',function(event){
     event.preventDefault();
@@ -107,6 +111,9 @@ document.getElementById('dark-button').addEventListener('click',function(event){
     const convertedRemainWork = parseInt(remainWork);
     const sum = convertedRemainWork - 1;
     document.getElementById("remain-work").innerText = sum;
+    if(sum === 0){
+        alert("Congrats!!You have completed all the current task.")
+    }
 
 })
 document.getElementById('home-button').addEventListener('click',function(event){
@@ -115,6 +122,9 @@ document.getElementById('home-button').addEventListener('click',function(event){
     const convertedRemainWork = parseInt(remainWork);
     const sum = convertedRemainWork - 1;
     document.getElementById("remain-work").innerText = sum;
+    if(sum === 0){
+        alert("Congrats!!You have completed all the current task.")
+    }
 
 })
 document.getElementById('emoji-button').addEventListener('click',function(event){
@@ -123,6 +133,9 @@ document.getElementById('emoji-button').addEventListener('click',function(event)
     const convertedRemainWork = parseInt(remainWork);
     const sum = convertedRemainWork - 1;
     document.getElementById("remain-work").innerText = sum;
+    if(sum === 0){
+        alert("Congrats!!You have completed all the current task.")
+    }
 
 })
 document.getElementById('openai-button').addEventListener('click',function(event){
@@ -131,6 +144,9 @@ document.getElementById('openai-button').addEventListener('click',function(event
     const convertedRemainWork = parseInt(remainWork);
     const sum = convertedRemainWork - 1;
     document.getElementById("remain-work").innerText = sum;
+    if(sum === 0){
+        alert("Congrats!!You have completed all the current task.")
+    }
 
 })
 document.getElementById('job-button').addEventListener('click',function(event){
@@ -139,9 +155,11 @@ document.getElementById('job-button').addEventListener('click',function(event){
     const convertedRemainWork = parseInt(remainWork);
     const sum = convertedRemainWork - 1;
     document.getElementById("remain-work").innerText = sum;
+    if(sum === 0){
+        alert("Congrats!!You have completed all the current task.")
+    }
 
 })
-
 
 //---task assigned ends---//
 
@@ -151,3 +169,6 @@ document.getElementById('discover').addEventListener('click',function(event){
     event.preventDefault();
     window.location.href = "quesans.html";
 })
+
+
+
